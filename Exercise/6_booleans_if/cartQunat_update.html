@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        Show Quantity
+    </button>
+
+    <button onclick="
+    // cartQuan=cartQuan+1;
+    // cartQuan+=1;
+    if(cartQuan>maxQuan)
+        alert('The Cart is full');
+    cartQuan++;
+    console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        Add to Cart
+    </button>
+
+    <button onclick="
+        // cartQuan=cartQuan+2;
+        if(cartQuan>maxQuan)
+        alert('The Cart is full');
+        cartQuan+=2;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        +2
+    </button>
+
+    <button onclick="
+        // cartQuan=cartQuan+3;
+        if(cartQuan>maxQuan)
+            alert('The Cart is full');
+        cartQuan+=3;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        +3
+    </button>
+
+
+    <button onclick="
+        if(cartQuan>maxQuan)
+            alert('The Cart is full');
+        cartQuan+=4;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        +4
+    </button>
+
+
+    
+    <button onclick="
+        if(cartQuan>maxQuan)
+            alert('The Cart is full');
+       cartQuan+=5; 
+       console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        +5
+    </button>
+
+
+    <button onclick="
+        if(cartQuan-2 < 0)
+            alert('Not enough items in the cart');
+        cartQuan-=2;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        -2
+    </button>
+
+
+    <button onclick="
+        if(cartQuan-2 < 0)
+        alert('Not enough items in the cart');
+        cartQuan-=3;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        -3
+    </button>
+
+
+
+    <button onclick="
+        cartQuan--;
+        console.log(`Cart Quantity: ${cartQuan}`);
+    ">
+        Remove From Cart
+    </button>
+
+
+    
+    <button onclick="
+     cartQuan=0;
+     console.log('Cart was reset');
+     console.log(`cart Quantity: ${cartQuan}`);
+    ">
+        Reset Cart
+    </button>
+
+
+    <script>
+        let cartQuan = 0;
+        const maxQuan=10;
+    </script>
+</body>
+
+</html>
