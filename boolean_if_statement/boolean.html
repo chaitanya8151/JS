@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        console.log(3<5);
+        console.log(3>5);                            
+        console.log(typeof true);
+        // console.log(true);
+        let b=true;
+        
+        console.log(5 ==='5.00');
+        
+
+        //if statement
+        if(false){
+            console.log('hello');
+        }
+        else{
+            console.log('else');
+            
+        }
+        const age=15;
+        if(age >= 18){
+            console.log('you can drive');
+        }
+        else if(age  >=14){
+            console.log('almost there!');
+            
+        }
+        else{
+            console.log('you cannot drive');
+        }
+
+        //logical operator
+        console.log(true && true);
+        
+        //or operator
+        console.log(true || false);
+        
+        //not operator
+        console.log(!true);
+        
+        // //truthy and falsy value
+        // if (5){
+        //     console.log('truthy');
+        // }
+        // if(0){
+        //     console.log('falsy');
+        // }
+
+        // const cartQuan=5;
+        // if(cartQuan){
+        //    console.log('cart has products');
+        // }
+        // else{
+        //     console.log('cart has no products');   
+        // }
+        // console.log(!0);
+        
+        // console.log('text'/5);
+
+        // let variable1;
+        // console.log(variable1);
+
+        //ternary operator
+        const resu=true?'truthy':'falsy';
+        console.log( true?'truthy':'falsy');
+        console.log(resu);
+        
+        
+        const currency= undefined ||'usd';
+        console.log(currency);
+        
+    </script>
+</body>
+</html>
