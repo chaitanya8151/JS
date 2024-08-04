@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // const product={
+        //     name:'socks',
+        //     pirce:1090
+        // };
+        // console.log(product);
+        // console.log(product.name);
+        // console.log(product.pirce);
+        
+        // product.name='cotton socks'
+        // console.log(product);
+
+        // product.newpro=true;
+        // console.log(product);
+        
+        // delete product.newpro;
+        // console.log(product);
+        // console.log(typeof product);
+        
+        const produc2={
+            name:'shirt',
+           ['delivery-time']:'1 day ',
+           'cost-pro':33,
+           rating:{
+            stars:4.5,
+            count:87
+           },
+           fun:function function1(){
+            console.log('function inside object');
+            
+           }
+        };
+        console.log(produc2);
+        console.log(produc2.name);
+        console.log(produc2['name']);
+        console.log(produc2['delivery-time']);
+        console.log(produc2['cost-pro']);
+        
+        
+        
+        console.log(produc2.rating.count);
+        console.log(produc2.fun);
+        produc2.fun(); 
+
+        console.log(JSON.stringify(produc2));
+        const jsonstring=JSON.stringify(produc2);
+       
+        console.log( JSON.parse(jsonstring));
+        
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        
+        const object1={
+            msg:'hello'
+        };
+        const object2=object1;
+        object1.msg='good job';
+        console.log(object1);
+        console.log(object2);
+        
+        const object3={
+            msg:'good job'
+        };
+        console.log(object3===object1);
+        console.log(object1===object2);
+        
+        const object4={
+            msg:'good job',
+            price:799
+        };
+        // const msg=object4.msg
+        const {msg,price}=object4;
+        console.log(msg);
+        console.log(price);
+        
+
+        const ob5={
+            // msg:msg
+            msg,
+            // method:function function1(){
+            //     console.log('method');
+                
+            // }
+            method(){
+                console.log('method');
+                
+            }
+        };
+        console.log(ob5);
+        ob5.method();
+    </script>
+</body>
+</html>
