@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom exercise</title>
+</head>
+
+<body>
+    <button>
+        9a
+    </button>
+    <button class="js-button">
+        9b
+    </button><br><br>
+
+    <button class="js-head" onclick="
+       choiceRes('heads');
+    ">
+        Heads
+    </button>
+    <button class="js-tails" onclick="
+        choiceRes('tails');
+    ">
+        Tails
+    </button>
+    <p class="js-para">
+
+    </p><br><br>
+    <input type="text" placeholder="Name" class="js-input" onkeydown="
+     if(event.key==='Enter'){
+        displayMsg();
+        
+     }
+    ">
+    <button onclick="
+        displayMsg();
+    ">
+        Submit
+    </button>
+    <p class="js-msg">
+
+    </p>
+    <script>
+        console.log(document.querySelector('button'));
+        console.log(typeof document.querySelector('button'));
+
+        document.querySelector('.js-button').innerHTML = '9b done!';
+
+        function choiceRes(choice) {
+            document.querySelector('.js-para').innerHTML = `You Chose: ${choice}`;
+        }
+        function displayMsg() {
+            const text = document.querySelector('.js-input').value;
+            document.querySelector('.js-msg').innerHTML = `Your Name is: ${text}`;
+        }
+    </script>
+</body>
+
+</html>

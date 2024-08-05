@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9h</title>
+</head>
+<body>
+    <input type="text" placeholder="Type something" class="js-input" onkeyup="
+            displayMsg();
+        ">
+    <p class="js-msg">
+
+    </p>
+    
+    <script>
+        function displayMsg(){
+            const iele=document.querySelector('.js-input');
+            document.querySelector('.js-msg').innerHTML=iele.value;
+        }
+    </script>
+
+</body>
+</html>
