@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //autoboxing
+       console.log('hello'.length);
+        console.log('hello'.toUpperCase());          
+        //object are refrences
+        const object1={
+            msg:'hello'
+        };
+        const obj2=object1;
+        object1.msg='good job';
+        console.log(object1);
+        console.log(obj2);
+        
+        const object3={
+             msg:'good job'
+        };
+        console.log(object1===object3);
+        console.log(object1===obj2);
+        
+        //shortcuts
+        const object4={
+             msg:'good job',
+             price:799
+        };
+       // const msg=object4.msg;
+        const{msg,price}=object4; //destructuring
+        console.log(msg);
+        console.log(price);
+       
+       //shorthand property
+       const object5={
+        //    msg:msg,
+           msg,
+        //    method:function function1(){
+        //     console.log();
+        //         console.log('method');
+                
+        //    }
+           method(){
+            console.log('method');
+            
+           }
+       }
+       console.log(object5);
+       
+       //shorthand method
+       object5.method();
+
+        
+
+    </script>
+</body>
+</html>
