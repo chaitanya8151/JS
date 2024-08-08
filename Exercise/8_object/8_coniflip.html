@@ -19,7 +19,14 @@
         ">
         Tails
     </button>
-
+    <button onclick="
+        record.wins=0;
+        record.loosses=0;
+        localStorage.removeItem('record');
+        
+    ">
+        Reset Score
+    </button>
     <script>
 
         // let res = '';

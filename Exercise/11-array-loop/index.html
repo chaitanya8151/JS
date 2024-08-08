@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercise</title>
+</head>
+<body>
+    <script>
+        const nums=[
+            10,20,30
+        ];
+        nums[2]=99;
+        console.log(nums);
+        
+        function getLastValue(arr){
+            const length=arr.length;
+            const lastValue=arr[length-1];
+            return lastValue;
+        }
+        console.log(getLastValue([1,20,22,24,5]));
+        console.log(getLastValue(['hi', 'hello', 'good']));
+
+        
+    </script>
+</body>
+</html>
