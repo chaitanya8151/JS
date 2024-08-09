@@ -29,7 +29,7 @@ let score = JSON.parse(localStorage.getItem('scores'))
                 computerMove = 'Paper';
             }
             else if (randomNumber >= 2 / 3 & randomNumber < 1) {
-                computerMove = 'Scissors';
+                computerMove = 'Scissor';
             }
             return computerMove;
         }
@@ -44,7 +44,7 @@ let score = JSON.parse(localStorage.getItem('scores'))
                 else if (computerMove === 'Paper') {
                     result = 'You lose.';
                 }
-                else if (computerMove === 'Scissors') {
+                else if (computerMove === 'Scissor') {
                     result = 'You Win.';
                 }
             }
@@ -61,7 +61,7 @@ let score = JSON.parse(localStorage.getItem('scores'))
                 }
 
             }
-            else if(playerMove==='Scissors'){
+            else if(playerMove==='Scissor'){
                 if (computerMove === 'Rock') {
                     result = 'You lose.';
                 }
@@ -88,9 +88,8 @@ let score = JSON.parse(localStorage.getItem('scores'))
 
             document.querySelector('.js-result').innerHTML = result;
 
-            document.querySelector('.js-moves').innerHTML =
-                `You <img class="move-icon" src="images/${playerMove}-emoji.png" alt=""> <img class="move-icon" src="images/${computerMove}-emoji.png" alt="">
-        Computer`;
+            document.querySelector('.js-moves').innerHTML =`You <img src="images/${playerMove}-emoji.png" class="move-icon">
+            <img src="images/${computerMove}-emoji.png" class="move-icon"> Computer`;
         }
 
         function updatescoreElement() {
