@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function removeEgg(foods){
+            const copyFood=foods.slice();
+            const reverseArr=copyFood.reverse();
+            console.log(reverseArr);
+            console.log(foods);
+            
+            const result=[];
+            let eggRemoved=0;
+            for(let i=0;i<reverseArr.length;i++){
+                if(reverseArr[i]==='egg' && eggRemoved<2){
+                    eggRemoved++;
+                    continue;
+                }
+                result.push(reverseArr[i]);
+            }
+            return result.reverse();
+        }
+
+        console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+    </script>
+</body>
+</html>

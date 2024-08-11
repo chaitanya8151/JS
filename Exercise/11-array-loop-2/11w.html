@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findIndex(array,word){
+            for(let i=0;i<array.length;i++){
+                const string=array[i];
+                if(string===word){
+                    return i;
+                }
+            }
+            return -1;
+        }
+    //    console.log(findIndex(['green','blue',],'blue'));
+    //    console.log(findIndex(['green','red','blue','red'],'yellow'));
+       function unique(arr){
+            const result=[];
+            for(let i=0;i<arr.length;i++){
+                if(findIndex(result,arr[i])=== -1){
+                    result.push(arr[i]);
+                }
+
+            }
+            return result;
+       }
+       console.log(unique(['green', 'red', 'blue', 'red']));
+
+    </script>
+</body>
+</html>

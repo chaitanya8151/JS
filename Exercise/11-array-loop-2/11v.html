@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Problem</title>
+</head>
+<body>
+    <script>
+        let s='';
+        for(let i=1;i<=20;i++){
+            if(i%3===0 && i%5===0){
+                // console.log('FizzBuzz');
+                s+='FizzBuzz'+' ';
+            }
+            if(i%3===0){
+                // console.log('Fizz');
+                s+='Fizz'+' ';
+            }
+            else if(i%5===0){
+                // console.log('Buzz');
+                s+='Buzz'+' ';
+            }
+            else
+                 s+=i+' ';
+        }
+        console.log(s);
+        
+        
+    </script>
+</body>
+</html>
