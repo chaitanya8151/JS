@@ -64,6 +64,43 @@
             }
             console.log(value,index);
             
+        });
+
+        const regularfunction=function(param,param2){
+            console.log('string hello');
+            return 5;           
+        }
+
+        const arrowFunction=(param,param2)=>{
+            console.log('Hello arrow function');
+            return 5;
+        };
+        arrowFunction();
+
+
+        //shortcut 
+        const oneParam=param=>{
+            console.log(param+1);
+            
+        };
+        oneParam(2);
+
+        const oneline=()=>2+3;
+        console.log(oneline());
+        
+
+        [
+            'himalayan',
+            'yamaha',
+            'Ktm'
+        ].forEach((value,index)=>{
+            if(value==='Ktm'){
+                return;
+            }
+            console.log(index);
+            console.log(value);
+            
+            
         })
     </script>
 </body>
