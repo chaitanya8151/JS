@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booleans</title>
 </head>
+
 <body>
     <script>
-        console.log(3<5);
-        console.log(3>5);                            
+       /* console.log(3 < 5);
+        console.log(3 > 5);
         console.log(typeof true);
-        // console.log(true);
-        let b=true;
-        
-        console.log(5 ==='5.00');
-        
 
-        //if statement
-        if(false){
-            console.log('hello');
+
+        // if(true){
+        //     console.log('hi');
+
+        // }
+        if (false) {
+            console.log('hey hi');
         }
-        else{
+        else {
             console.log('else');
-            
         }
-        const age=15;
-        if(age >= 18){
+
+        const age = 15;
+        if (age >= 16)
             console.log('you can drive');
-        }
-        else if(age  >=14){
+        else if (age >= 14)
             console.log('almost there!');
+        else
+            console.log('you cannot drive');
+        */
+       
+        /*
+        //AND operator
+        console.log(true && true);
+        console.log(true && false);
+       
+        //OR operator
+        console.log(true || false);
+        console.log(false || false);
+
+        //NOT operator
+        console.log(!true);
+        */
+
+        /*
+        //Truthy and Falsy Value
+        if(5){
+            console.log('truthy');
             
         }
-        else{
-            console.log('you cannot drive');
+        if(0){
+            console.log('truthy');
+        }
+        
+        const cartQunatity = 5;
+        if(cartQunatity){
+           console.log('cart has product');  
         }
 
-        //logical operator
-        console.log(true && true);
-        
-        //or operator
-        console.log(true || false);
-        
-        //not operator
-        console.log(!true);
-        
-        // //truthy and falsy value
-        // if (5){
-        //     console.log('truthy');
-        // }
-        // if(0){
-        //     console.log('falsy');
-        // }
-
-        // const cartQuan=5;
-        // if(cartQuan){
-        //    console.log('cart has products');
-        // }
-        // else{
-        //     console.log('cart has no products');   
-        // }
-        // console.log(!0);
-        
-        // console.log('text'/5);
-
-        // let variable1;
-        // console.log(variable1);
+        console.log(!0);
+        */
 
         //ternary operator
-        const resu=true?'truthy':'falsy';
-        console.log( true?'truthy':'falsy');
-        console.log(resu);
+        const result = true ? 'Truthy' : 'falsy';
+        console.log(result);
         
-        //guard operator
+        //&& guard operator
         false && console.log('hello');
-        const message= 5&& 'hello';
-        console.log(message);
+
+        const msg= 5 && 'Hello';
+        console.log(msg);
         
-        //operator
-        
-        
-        const currency= undefined ||'usd';
+        // || default operator
+        const currency = undefined || 'USD';
         console.log(currency);
         
     </script>
 </body>
+
 </html>
